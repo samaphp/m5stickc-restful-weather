@@ -165,7 +165,7 @@ void handle_JsonResponse(){
   response += " } }";
   Serial.println(response);
 
-  server.send(404, "application/json", response);
+  server.send(200, "application/json", response);
 }
 
 void handle_NotFound(){
